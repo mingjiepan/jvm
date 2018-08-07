@@ -15,18 +15,22 @@ package com.mjie.classloader;
  */
 public class MyTest4 {
     public static void main(String[] args) {
-//        MyParent4 myParent4 = new MyParent4();
+        MyParent4 myParent4 = new MyParent4();
 
         System.out.println("----");
 
         MyParent4[] parent4s = new MyParent4[1];
-        System.out.println(parent4s.getClass());//class [Lcom.mjie.classloader.MyParent4;
-        System.out.println(parent4s.getClass().getSuperclass());//class java.lang.Object
+        //class [Lcom.mjie.classloader.MyParent4;
+        System.out.println(parent4s.getClass());
+        //class java.lang.Object
+        System.out.println(parent4s.getClass().getSuperclass());
 
         System.out.println("----------");
         MyParent4[][] myParent4s = new MyParent4[1][1];
-        System.out.println(myParent4s.getClass());//class [[Lcom.mjie.classloader.MyParent4;
-        System.out.println(myParent4s.getClass().getSuperclass());//class java.lang.Object
+        //class [[Lcom.mjie.classloader.MyParent4;
+        System.out.println(myParent4s.getClass());
+        //class java.lang.Object
+        System.out.println(myParent4s.getClass().getSuperclass());
         System.out.println("----------");
 
         int[] arr = new int[1];
