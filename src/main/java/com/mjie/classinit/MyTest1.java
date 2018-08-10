@@ -1,4 +1,4 @@
-package com.mjie.classloader;
+package com.mjie.classinit;
 
 /**
  * 测试对类的主动使用，类初始化的情况
@@ -15,7 +15,7 @@ public class MyTest1 {
         System.out.println(MyChild1.str);
 
         //情况2：访问MyChild1的静态成员，那么是对MyChild1类的主动使用，因此其父类需要先初始化，再初始化子类的
-        System.out.println(MyChild1.str2);
+        /*System.out.println(MyChild1.str2);*/
     }
 }
 
@@ -28,6 +28,15 @@ class MyParent1 {
     static {
         System.out.println("myParent1 static block");
     }
+
+    public static String str2 = echo();
+
+    public static String echo() {
+        System.out.println("echo invoked");
+        return "hello world";
+    }
+
+
 }
 
 class MyChild1 extends MyParent1 {

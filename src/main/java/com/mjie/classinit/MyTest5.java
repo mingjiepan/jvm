@@ -1,6 +1,4 @@
-package com.mjie.classloader;
-
-import java.util.UUID;
+package com.mjie.classinit;
 
 /**
  * <pre>
@@ -18,17 +16,38 @@ import java.util.UUID;
  */
 public class MyTest5 {
     public static void main(String[] args) {
-        System.out.println(MyChild5.str);
+        System.out.println(MyChild5.c);
+        /*System.out.println(MyParent5_1.d);*/
     }
 }
 
 interface MyParent5 {
     public static int a = 5;
-}
 
-interface MyChild5 extends MyParent5 {
+    public static Thread thread = new Thread() {
+        {
+            System.out.println("MyParent5 invoked");
+        }
+    };
+}
+class MyChild5 implements MyParent5 {
     public static final int b = 6;
-    String str = UUID.randomUUID().toString();
+    public static int c = 7;
+    public static Thread thread3 = new Thread() {
+        {
+            System.out.println("MyChild5 invoked");
+        }
+    };
+    static {
+        System.out.println("MyChild5 static block");
+    }
 }
 
-
+interface MyParent5_1 extends MyParent5 {
+    public static int d = 3;
+    public static Thread thread2 = new Thread() {
+        {
+            System.out.println("MyParent5_1 invoked");
+        }
+    };
+}

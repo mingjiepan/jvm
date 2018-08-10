@@ -1,4 +1,4 @@
-package com.mjie.classloader;
+package com.mjie.classinit;
 
 /**
  * <ul>

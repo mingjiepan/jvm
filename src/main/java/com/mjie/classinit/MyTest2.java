@@ -1,4 +1,4 @@
-package com.mjie.classloader;
+package com.mjie.classinit;
 
 /**
  * 测试类对常量的引用
