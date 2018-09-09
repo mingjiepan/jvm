@@ -27,6 +27,15 @@ public class MyClassLoader extends ClassLoader {
         this.classLoaderName = classLoaderName;
     }
 
+    /**
+     * 将类设置为系统类加载器，为什么要有这个构造器，请查看这个
+     * {@link SystemClassLoaderAction#run()}
+     * @param loader 系统默认的类加载器，一般为appClassLoader
+     */
+    public MyClassLoader(ClassLoader loader) {
+        super(loader);
+    }
+
     @Override
     protected Class<?> findClass(String className) {
 
