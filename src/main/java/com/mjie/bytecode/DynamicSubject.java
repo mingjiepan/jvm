@@ -12,6 +12,7 @@ import java.lang.reflect.Method;
 public class DynamicSubject implements InvocationHandler {
 
     private Object sub;
+
     public DynamicSubject(Object obj) {
         this.sub = obj;
     }

@@ -6,8 +6,8 @@ package com.mjie.bytecode;
  * 3. invokespecial：调用自己的私有方法、构造方法（<init>）以及父类的方法。
  * 4. invokevirtual：调用虚方法，运行期动态查找的过程
  * 5. invokedynamic：动态调用方法。
- *
- *
+ * <p>
+ * <p>
  * 静态解析的4种情形：
  * 1. 静态方法
  * 2. 父类方法

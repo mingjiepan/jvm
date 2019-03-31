@@ -13,7 +13,7 @@ public class MyTest2 {
 
     private Object object = new Object();
 
-    public synchronized int setAge (int age) {
+    public synchronized int setAge(int age) {
         int result = 0;
         try {
             this.age = age;

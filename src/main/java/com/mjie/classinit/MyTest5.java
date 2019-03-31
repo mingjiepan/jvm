@@ -30,6 +30,7 @@ interface MyParent5 {
         }
     };
 }
+
 class MyChild5 implements MyParent5 {
     public static final int b = 6;
     public static int c = 7;
@@ -38,6 +39,7 @@ class MyChild5 implements MyParent5 {
             System.out.println("MyChild5 invoked");
         }
     };
+
     static {
         System.out.println("MyChild5 static block");
     }

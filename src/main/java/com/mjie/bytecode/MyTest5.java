@@ -10,7 +10,6 @@ package com.mjie.bytecode;
  * @author panmingjie
  * @date 2018/10/21 14:43
  */
-
 class Grandpa {
 }
 
@@ -26,9 +25,11 @@ public class MyTest5 {
     public void test(Grandpa grandpa) {
         System.out.println("grandpa");
     }
+
     public void test(Father father) {
         System.out.println("father");
     }
+
     public void test(Son son) {
         System.out.println("son");
     }

@@ -4,8 +4,9 @@ package com.mjie.classinit;
  * 测试对类的主动使用，类初始化的情况
  * <p>对于静态字段来说，只有直接定义可该字段的类才会被初始化
  * 当一个类在初始化时，要求其父类全部都已经初始化完毕了</p>
- *
+ * <p>
  * -XX: +TraceClassLoading：用于追踪类的加载信息并打印出来
+ *
  * @author panmingjie
  */
 public class MyTest1 {

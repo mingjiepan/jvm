@@ -2,6 +2,7 @@ package com.mjie.classinit;
 
 /**
  * 通过 子类类名.父类静态成员/方法 表示的是对父类的主动使用，不会对子类进行初始化
+ *
  * @author panmingjie
  */
 class Parent3 {

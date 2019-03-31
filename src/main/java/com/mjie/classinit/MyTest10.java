@@ -2,6 +2,7 @@ package com.mjie.classinit;
 
 /**
  * 启动类的会先进行初始化
+ *
  * @author panmingjie
  */
 

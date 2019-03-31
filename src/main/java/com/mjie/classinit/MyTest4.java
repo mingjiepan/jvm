@@ -2,14 +2,13 @@ package com.mjie.classinit;
 
 /**
  * <ul>
- *     <li>通过new一个对象，也是对类的主动使用，因此会导致类的初始化,
- *     注意类只会在首次主动使用时，才会进行初始化，因此只会进行一次初始化</li>
- *     <li>对于数组实例来说，其类型时由jvm在运行期动态生成的，表示为[Lcom.mjie.classloader.MyParent4这种形式。
- *     动态生成的类型，其父类型就是Object</li>
+ * <li>通过new一个对象，也是对类的主动使用，因此会导致类的初始化,
+ * 注意类只会在首次主动使用时，才会进行初始化，因此只会进行一次初始化</li>
+ * <li>对于数组实例来说，其类型时由jvm在运行期动态生成的，表示为[Lcom.mjie.classloader.MyParent4这种形式。
+ * 动态生成的类型，其父类型就是Object</li>
  *
- *     <li>对于数组来说，Javadoc经常将构成数组的元素为component，实际上就是将数组降低一个维度后的类型</li>
+ * <li>对于数组来说，Javadoc经常将构成数组的元素为component，实际上就是将数组降低一个维度后的类型</li>
  * </ul>
- *
  *
  * @author panmingjie
  */

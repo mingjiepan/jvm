@@ -17,7 +17,7 @@ public class MyTest16 {
 
         System.out.println("--------------------");
 
-        MyClassLoader loader2 = new MyClassLoader(loader1,"loader2");
+        MyClassLoader loader2 = new MyClassLoader(loader1, "loader2");
         loader2.setPath("D:\\tmp\\");
 
         Class<?> clazz2 = loader2.loadClass("com.mjie.classinit.MyTest1");

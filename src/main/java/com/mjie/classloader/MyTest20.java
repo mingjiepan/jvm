@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 /**
  * 理解不同命名空间加载类的情况
- *
+ * <p>
  * 类加载器的双亲委托模型的好处：
  * 1. 可以确保Java核心库的类型安全：所有的Java应用都至少会引用Java.lang.Object类，也就是说在运行期，java.lang.Object这个
  * 类会被加载到Java虚拟机中，如果这个加载过程是由Java应用自己的类加载器所完成的，那么很可能就会在jvm中存在多个版本的java.lang.Object类，
@@ -13,7 +13,6 @@ import java.lang.reflect.Method;
  * 2. 可以确保Java核心类库所提供的类不会被自定义的类所替代。
  * 3. 不同的类加载器可以为相同名称（binary name）的类创建额外的命名空间。相同名称的类可以并存在Java虚拟机中，只需要用不同的类加载器来加载它们即可。不同类
  * 加载器所加载的类之间是不兼容的，这就相当于在Java虚拟机内部创建了一个又一个相互隔离的Java类空间，这类技术在很多框架中都得到了实际应用。
- *
  *
  * @author panmingjie
  * @date 2018/8/27 23:11
